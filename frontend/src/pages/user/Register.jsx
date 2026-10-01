@@ -117,7 +117,7 @@ export const Register = () => {
                 onClick={() => setRole('STUDENT')}
                 className={`p-3.5 rounded-2xl text-left border transition flex flex-col justify-between gap-1.5 ${
                   role === 'STUDENT'
-                    ? 'bg-kasu-green-50 border-kasu-green-600 ring-2 ring-kasu-green-600/30'
+                    ? 'bg-kasu-green-50 border-kasu-green-60 ring-2 ring-kasu-green-600/30'
                     : 'bg-slate-50 border-slate-200 hover:bg-slate-100/80'
                 }`}
               >
@@ -271,7 +271,7 @@ export const Register = () => {
                       required
                       value={formData.idNumber}
                       onChange={handleChange}
-                      placeholder="e.g. KASU/24/CSC/1042"
+                      placeholder="e.g. KASU/22/CSC/0000"
                       className="w-full px-3.5 py-2.5 rounded-xl border border-slate-300 text-sm focus:outline-none focus:ring-2 focus:ring-kasu-green-600 bg-slate-50 focus:bg-white transition text-slate-900 font-medium"
                     />
                   </div>
@@ -382,12 +382,12 @@ export const Register = () => {
               </div>
             </div>
           </div>
-
+                  {/* COMPLETE ACCOUNT REGISTRATION  */}
           <div className="pt-2">
             <button
               type="submit"
               disabled={loading}
-              className="w-full py-3.5 rounded-2xl bg-gradient-to-r from-kasu-red-800 to-kasu-red-700 hover:from-kasu-red-700 hover:to-kasu-red-600 text-white font-black text-xs uppercase tracking-wider shadow-md transition flex items-center justify-center gap-2 border border-kasu-red-600 disabled:opacity-50"
+              className="w-full py-3.5 rounded-2xl bg-green-800 hover:bg-green-800 hover:bg-green-600 text-white font-black text-xs uppercase tracking-wider shadow-md transition flex items-center justify-center gap-2 border disabled:opacity-50"
             >
               {loading ? 'Creating Account...' : 'Complete Account Registration'}
               {!loading && <ArrowRight className="w-4 h-4" />}
@@ -397,7 +397,7 @@ export const Register = () => {
 
         <div className="mt-4 pt-4 text-center text-xs text-slate-600 border-t border-slate-200">
           Already registered?{' '}
-          <Link to="/login" className="text-kasu-red-800 font-black hover:underline">
+          <Link to="/login" className="text-green-800 font-black hover:underline">
             Sign in here
           </Link>
         </div>

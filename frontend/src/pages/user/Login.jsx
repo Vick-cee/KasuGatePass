@@ -94,7 +94,7 @@ export const Login = () => {
           <div className="space-y-1">
             <div className="flex items-center justify-between">
               <label className="text-xs font-bold text-slate-700">Password</label>
-              <Link to="/forgot-password" className="text-xs text-kasu-red-800 font-bold hover:underline">
+              <Link to="/forgot-password" className="text-xs text-kasu-green-800 font-bold hover:underline">
                 Forgot password?
               </Link>
             </div>
@@ -114,7 +114,7 @@ export const Login = () => {
           <button
             type="submit"
             disabled={loading}
-            className="w-full py-3 rounded-2xl bg-gradient-to-r from-kasu-red-800 to-kasu-red-700 hover:from-kasu-red-700 hover:to-kasu-red-600 text-white font-black text-xs uppercase tracking-wider shadow-md transition flex items-center justify-center gap-2 border border-kasu-red-600 disabled:opacity-50"
+            className="w-full py-3 rounded-2xl bg-green-800 hover:bg-green-700 hover:bg-green-600 text-white font-black text-xs uppercase tracking-wider shadow-md transition flex items-center justify-center gap-2  disabled:opacity-50"
           >
             {loading ? 'Authenticating...' : 'Sign In to Portal'}
             {!loading && <ArrowRight className="w-4 h-4" />}
@@ -123,7 +123,7 @@ export const Login = () => {
 
         <div className="pt-3 text-center text-xs text-slate-600 border-t border-slate-200">
           Don't have an account yet?{' '}
-          <Link to="/register" className="text-kasu-red-800 font-black hover:underline">
+          <Link to="/register" className="text-kasu-green-800 font-black hover:underline">
             Register Account
           </Link>
         </div>
@@ -138,7 +138,7 @@ export const Login = () => {
         <p className="text-[11px] text-slate-500">
           Test distinct role dashboards with pre-seeded accounts:
         </p>
-
+                {/* SIGN IN DEMO FOR LOGIN SECTION */}
         <div className="grid grid-cols-1 sm:grid-cols-2 gap-2">
           {DEMO_USERS.map((demo) => (
             <button

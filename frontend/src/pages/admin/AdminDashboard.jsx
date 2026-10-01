@@ -132,7 +132,7 @@ export const AdminDashboard = () => {
           </Link>
         </div>
 
-        {/* Today's Traffic Movements */}
+    {/* TODAY"S TRAFFIC MOVEMENTS */}
         <div className="bg-white rounded-2xl p-5 border border-slate-200 shadow-sm space-y-3">
           <div className="flex items-center justify-between">
             <span className="text-xs font-semibold text-slate-500 uppercase tracking-wider">Today's Gate Traffic</span>
@@ -188,7 +188,7 @@ export const AdminDashboard = () => {
         </div>
       </div>
 
-      {/* Live Gate Scan Stream */}
+                               {/*LIVE GATE SCAN STREAM */}
       <div className="bg-white rounded-3xl border border-slate-200 shadow-sm p-6 space-y-4">
         <div className="flex items-center justify-between">
           <div>

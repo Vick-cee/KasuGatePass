@@ -10,14 +10,19 @@ export const Footer = () => {
           {/* Col 1: University Identity */}
           <div className="space-y-4">
             <div className="flex items-center gap-3">
-              <div className="w-9 h-9 rounded-xl bg-gradient-to-br from-kasu-red-800 to-kasu-red-950 flex items-center justify-center text-white font-black text-base shadow border border-kasu-red-700">
-                K
+              <div className="w-9 h-9 rounded-xl bg-green-900 flex items-center justify-center text-white font-black text-base shadow border">
+                <img
+            src="/kasu-logo.png"
+            alt="KASU Watermark"
+            className="w-9 h-9 rounded-xl bg-green-900 flex items-center justify-center text-white font-black text-base shadow border"
+                />
               </div>
               <div>
                 <span className="font-black text-white text-base tracking-tight block">Kaduna State University</span>
                 <span className="text-[10px] text-slate-400 font-mono">Tafawa Balewa Way, Kaduna</span>
               </div>
             </div>
+            
             <p className="text-xs text-slate-400 leading-relaxed">
               Directorate of Campus Security & Transportation Management. Regulating vehicle gate clearance, digital passes, and perimeter safety across KASU campuses.
             </p>

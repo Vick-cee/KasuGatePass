@@ -32,7 +32,8 @@ export const Home = () => {
   return (
     <div className="space-y-16 py-4 max-w-7xl mx-auto">
       {/* Hero Section */}
-      <section className="relative overflow-hidden rounded-3xl bg-gradient-to-br from-kasu-red-900 via-kasu-red-800 to-kasu-red-950 text-white shadow-2xl p-8 sm:p-12 lg:p-16 border border-kasu-red-700">
+                              {/* BIG DIV COLOR */}
+      <section className="relative overflow-hidden rounded-3xl bg-green-800 text-white shadow-2xl p-8 sm:p-12 lg:p-16 border border-green-700">
         {/* Subtle decorative crest watermark in background */}
         <div className="absolute -right-12 -bottom-12 opacity-10 pointer-events-none hidden lg:block">
           <img
@@ -107,13 +108,13 @@ export const Home = () => {
                 <div className="text-xs text-slate-200 font-medium">Dedicated Entry & Exit</div>
               </div>
               <div className="space-y-0.5">
-                <div className="text-2xl font-black text-amber-300">&lt; 0.5s</div>
+                <div className="text-2xl font-black text-amber-300">&lt; 4.5s</div>
                 <div className="text-xs text-slate-200 font-medium">QR Optical Clearance</div>
               </div>
             </div>
           </div>
 
-          {/* Right Column: Specimen Pass Card */}
+          {/* WHITE DIV IN READ DIV HOME PAGE*/}
           <div className="lg:col-span-5">
             <div className="bg-white rounded-3xl p-6 shadow-2xl border border-slate-200 text-slate-900 space-y-4">
               <div className="flex items-center justify-between border-b border-slate-100 pb-3">
@@ -254,7 +255,7 @@ export const Home = () => {
         </div>
       </section>
 
-      {/* 3-Step Clearance Workflow */}
+        {/* 3-Step Clearance Workflow */}
       <section className="space-y-8">
         <div className="text-center max-w-2xl mx-auto space-y-2">
           <span className="text-xs font-black uppercase tracking-widest text-kasu-green-800 bg-kasu-green-50 px-3.5 py-1 rounded-full border border-kasu-green-200">
@@ -359,7 +360,7 @@ export const Home = () => {
       </section>
 
       {/* Emergency Dispatch & Registration CTA */}
-      <section className="rounded-3xl bg-gradient-to-r from-kasu-red-900 via-kasu-red-800 to-kasu-red-950 border border-kasu-red-700 text-white p-8 sm:p-12 text-center space-y-6 shadow-xl">
+      <section className="rounded-3xl bg-green-800 text-white p-8 sm:p-12 text-center space-y-6 shadow-xl">
         <div className="max-w-2xl mx-auto space-y-3">
           <span className="text-xs font-black uppercase tracking-widest text-kasu-green-300 bg-white/10 px-3.5 py-1 rounded-full border border-white/20">
             Kaduna State University &bull; Security Command
